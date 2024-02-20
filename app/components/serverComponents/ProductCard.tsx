@@ -1,10 +1,10 @@
 // Components
 import AddToCart from "../clientComponents/AddToCart";
-import styles from "./ProductCard.module.scss";
 
 const ProductCard = () => {
   return (
-    <div className={styles.card}>
+    <div className="font-bold text-2xl">
+      adasd
       <AddToCart />
     </div>
   );
