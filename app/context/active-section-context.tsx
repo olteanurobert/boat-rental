@@ -4,7 +4,7 @@
 import { useState, createContext, useContext } from "react";
 
 // Local types
-import type { SectionName } from "@/app/lib/types";
+import type { SectionName } from "@/app/libr/types";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;

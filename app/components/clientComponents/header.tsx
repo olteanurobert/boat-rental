@@ -1,7 +1,7 @@
 "use client";
 
 // Local data
-import { links } from "@/app/lib/data";
+import { links } from "@/app/libr/data";
 
 // Helpers / Libraries
 import Link from "next/link";
