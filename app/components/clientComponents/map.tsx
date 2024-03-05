@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="w-full max-w-screen-lg h-96 mb-28">
       <GoogleMapsEmbed
-        apiKey="AIzaSyDodo5jxKmdXUXC3kXBbq67NgjE7jIs3WQ"
+        apiKey={process.env.NODE_ENV}
         height="384"
         width="100%"
         mode="place"
