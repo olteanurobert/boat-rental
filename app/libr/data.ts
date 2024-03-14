@@ -1,66 +1,70 @@
+import React from "react";
+
+// Itineraries assets
 import corpcommentImg from "@/public/carousel/cj-botha-T5Q6ChvfYEI-unsplash.jpg";
 import rmtdevImg from "@/public/carousel/claudio-schwarz-G_ZiOoBRu3s-unsplash.jpg";
 import wordanalyticsImg from "@/public/carousel/claudio-schwarz-i3d9vUMI0HA-unsplash.jpg";
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+
+// Steps icons
+import { FaBookReader } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+import { FaCar } from "react-icons/fa";
 
 export const links = [
     {
-      name: "Home",
+      name: "Acasă",
       hash: "#home",
     },
     {
-      name: "About",
+      name: "Despre noi",
       hash: "#about",
     },
     {
-      name: "Projects",
-      hash: "#projects",
+      name: "Trasee",
+      hash: "#itinerary",
     },
     {
-      name: "Skills",
-      hash: "#skills",
+      name: "Pași",
+      hash: "#steps",
     },
-    {
-      name: "Experience",
-      hash: "#experience",
-    },
+    // {
+    //   name: "Skills",
+    //   hash: "#skills",
+    // },
     {
       name: "Contact",
       hash: "#contact",
     },
   ] as const;
 
-  export const experiencesData = [
+  export const stepsData = [
     {
-      title: "Graduated bootcamp",
-      location: "Miami, FL",
+      title: "Pasul 1",
+      location: "Consultă traseele prezentate",
       description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-      icon: React.createElement(LuGraduationCap),
-      date: "2019",
+        "În cazul în care nu dorești un traseu predefinit, putem discuta telefonic pentru a organiza și adapta un traseu croit pentru nevoile și dorințele tale.",
+      icon: React.createElement(FaBookReader),
+      // date: "2019",
     },
     {
-      title: "Front-End Developer",
-      location: "Orlando, FL",
+      title: "Pasul 2",
+      location: "Rezervă",
       description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-      icon: React.createElement(CgWorkAlt),
-      date: "2019 - 2021",
+        "Contactează-ne la numărul de telefon 0744 259 256 pentru a face rezervarea. Totodată putem discuta despre numarul de persoane in barca, etc.",
+      icon: React.createElement(FaPhone),
+      // date: "2019 - 2021",
     },
     {
-      title: "Full-Stack Developer",
-      location: "Houston, TX",
+      title: "Pasul 3",
+      location: "Hai în Deltă!!!",
       description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-      icon: React.createElement(FaReact),
-      date: "2021 - present",
+        "Folosește harta cu direcțiile, din partea de jos a paginii și ne vedem la debarcader, pe ponton pentru a pleca în excursie în Deltă.",
+      icon: React.createElement(FaCar),
+      // date: "2021 - present",
     },
   ] as const;
 
-  export const projectsData = [
+  export const itinerariesData = [
     {
       title: "Tulcea - Mila 23",
       description:
@@ -70,19 +74,19 @@ export const links = [
       imageUrl: corpcommentImg,
     },
     {
-      title: "rmtDev",
+      title: "Excursie Colonia de pasari",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+        "Vom porni din Tulcea – Canal 36 – Canal Trofilca – Canal Sireasa – Lac Cotete – Lac Carasul – Lac Purcelu – Canal Sireasa de Nord si dupa ce am parcurs tot traseul de vom intoarce catre Tulcea",
         route: "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        tags: ["Pret: 149 lei/pers", "Durata: 4-5 ore"],
       imageUrl: rmtdevImg,
     },
     {
-      title: "Word Analytics",
+      title: "Excursie în Delta Dunării cu durata de 2–3 ore (Lacul cu Cotețe)",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        "Excursia cea mai solicitată de persoanele pasionate de observarea păsărilor, oferindu-ți șansa de a realiza fotografii și filmări unor specii diverse de păsări în imediata lor apropiere.",
         route: "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        tags: ["Pret: 149 lei/pers", "Durata: 4-5 ore"],
       imageUrl: wordanalyticsImg,
     },
   ] as const;

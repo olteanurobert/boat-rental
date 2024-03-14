@@ -2,11 +2,11 @@
 import Link from "next/link";
 
 // Components
-import HeroSection from "./components/heroSection";
+import HeroSection from "./components/clientComponents/heroSection";
 import About from "./components/clientComponents/about";
-import Projects from "./components/clientComponents/projects";
-import Map from "./components/clientComponents/map";
-import Experience from "./components/clientComponents/experience";
+import Itineraries from "./components/clientComponents/itineraries";
+import GoogleMap from "./components/clientComponents/googleMap";
+import Steps from "./components/clientComponents/steps";
 
 const HomePage = () => {
   return (
@@ -15,11 +15,11 @@ const HomePage = () => {
 
       <About />
 
-      <Experience />
+      <Itineraries />
 
-      <Projects />
+      <Steps />
 
-      <Map />
+      <GoogleMap />
     </main>
   );
 };

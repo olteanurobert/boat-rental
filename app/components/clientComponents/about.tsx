@@ -1,12 +1,17 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "../section-heading";
+
+import SectionHeading from "../serverComponents/section-heading";
+
+// Framer motion
 import { motion } from "framer-motion";
+
+// Helpers
 import { useSectionInView } from "@/app/libr/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Despre noi");
 
   return (
     <motion.section
@@ -17,32 +22,22 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+      <SectionHeading>Despre noi</SectionHeading>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3">
+        Bine ai venit în minunata Delta Dunării! <br /> Dacă ești dedicat
+        naturii și aventurii, această zonă deosebită îți va captiva inima pentru
+        totdeauna. Mi-am propus să fac acest colț de rai mai accesibil pentru
+        tine și toți cei dornici să-l exploreze și să le ofer experiențe unice
+        în mijlocul naturii. <br /> Pentru că frumusețea Deltei trebuie
+        împărtășită cu cât mai mulți entuziaști ai naturii, îmi doresc ca
+        fiecare vizitator să aibă ocazia de a descoperi farmecul ei prin
+        excursiile pe traseele variate. <br /> Sunt încântat să ofer excursii pe
+        mai multe trasee cu barca cu motor, asigurând protecție împotriva ploii
+        și vântului. Astfel, te vei putea bucura de priveliști de neuitat, fără
+        grija vremii. Pentru mine, bucuria ta în mijlocul naturii este cea mai
+        mare recompensă. Așadar, te invit să mă însoțești și să te bucuri de
+        frumusețile Deltei Dunării.
       </p>
     </motion.section>
   );

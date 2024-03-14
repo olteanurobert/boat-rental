@@ -1,10 +1,11 @@
+// Google maps embed
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 
-export default function Page() {
+const GoogleMap = () => {
   return (
     <div className="w-full max-w-screen-lg h-96 mb-28">
       <GoogleMapsEmbed
-        apiKey={process.env.NODE_ENV}
+        apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
         height="384"
         width="100%"
         mode="place"
@@ -13,4 +14,6 @@ export default function Page() {
       />
     </div>
   );
-}
+};
+
+export default GoogleMap;

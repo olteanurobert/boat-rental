@@ -13,6 +13,7 @@ import { BsFacebook } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../../public/logo.png";
+
 // Context
 import { useActiveSectionContext } from "@/app/context/active-section-context";
 import Image from "next/image";
