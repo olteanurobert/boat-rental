@@ -8,13 +8,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 // Components
-import Header from "./components/clientComponents/header";
 import Footer from "./components/serverComponents/footer";
 import ThemeSwitch from "@/app/components/clientComponents/theme-switch";
 
 // Context
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
+import Navigation from "./components/clientComponents/navigation/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+            <Navigation />
 
             {children}
 

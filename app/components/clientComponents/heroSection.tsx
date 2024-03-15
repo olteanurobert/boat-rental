@@ -13,24 +13,23 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Helpers
-import { useSectionInView } from "@/app/libr/hooks";
+// Components
+import Image from "next/image";
 
+// Assets
 import a from "../../../public/carousel/cj-botha-T5Q6ChvfYEI-unsplash.jpg";
 import b from "../../../public/carousel/claudio-schwarz-G_ZiOoBRu3s-unsplash.jpg";
 import c from "../../../public/carousel/claudio-schwarz-i3d9vUMI0HA-unsplash.jpg";
 import d from "../../../public/carousel/neom-D1jr0Mevs-c-unsplash.jpg";
 import e from "../../../public/carousel/oscar-gutierrez-njlxwIKEMeE-unsplash.jpg";
-import Image from "next/image";
 
 const HeroSection = () => {
   const images = [a, b, c, d, e];
-  const { ref } = useSectionInView("Acasă");
 
   return (
-    <div ref={ref} id="home" className="w-full max-w-[1500px]">
+    <div className="w-full max-w-[1500px]">
       <Carousel
-        // plugins={[Autoplay({ delay: 8000 })]}
+        plugins={[Autoplay({ delay: 8000 })]}
         className="w-full"
         opts={{ loop: true }}
         // onMouseEnter={plugin.current.stop}

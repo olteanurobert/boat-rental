@@ -1,5 +1,3 @@
-"use client";
-
 // Local data
 import { links } from "@/app/libr/data";
 
@@ -12,18 +10,18 @@ import { motion } from "framer-motion";
 import { BsFacebook } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
-import logo from "../../../public/logo.png";
+import logo from "../../../../public/logo.png";
 
 // Context
 import { useActiveSectionContext } from "@/app/context/active-section-context";
 import Image from "next/image";
 
-const Header = () => {
+const NavDesktop = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
-    <header className="flex justify-between items-center px-6 pt-2 pb-6">
+    <header className="flex w-full justify-between items-center p-6 fixed top-0 z-10">
       <div className="">
         <div className="">
           <Image src={logo} alt="" className="w-20" />
@@ -101,4 +99,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavDesktop;
