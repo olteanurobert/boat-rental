@@ -11,82 +11,108 @@ import { FaPhone } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
 
 export const links = [
-    {
-      name: "Acasă",
-      hash: "#home",
-    },
-    {
-      name: "Despre noi",
-      hash: "#about",
-    },
-    {
-      name: "Trasee",
-      hash: "#itinerary",
-    },
-    {
-      name: "Pași",
-      hash: "#steps",
-    },
-    // {
-    //   name: "Skills",
-    //   hash: "#skills",
-    // },
-    {
-      name: "Contact",
-      hash: "#contact",
-    },
-  ] as const;
+  {
+    name: "Acasă",
+    hash: "#home",
+  },
+  {
+    name: "Despre mine",
+    hash: "#about",
+  },
+  {
+    name: "Trasee",
+    hash: "#itinerary",
+  },
+  {
+    name: "Pași de urmat",
+    hash: "#steps",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
 
-  export const stepsData = [
-    {
-      title: "Pasul 1",
-      location: "Consultă traseele prezentate",
-      description:
-        "În cazul în care nu dorești un traseu predefinit, putem discuta telefonic pentru a organiza și adapta un traseu croit pentru nevoile și dorințele tale.",
-      icon: React.createElement(FaBookReader),
-      // date: "2019",
-    },
-    {
-      title: "Pasul 2",
-      location: "Rezervă",
-      description:
-        "Contactează-ne la numărul de telefon 0744 259 256 pentru a face rezervarea. Totodată putem discuta despre numarul de persoane in barca, etc.",
-      icon: React.createElement(FaPhone),
-      // date: "2019 - 2021",
-    },
-    {
-      title: "Pasul 3",
-      location: "Hai în Deltă!!!",
-      description:
-        "Folosește harta cu direcțiile, din partea de jos a paginii și ne vedem la debarcader, pe ponton pentru a pleca în excursie în Deltă.",
-      icon: React.createElement(FaCar),
-      // date: "2021 - present",
-    },
-  ] as const;
+export const stepsData = [
+  {
+    title: "Pasul 1",
+    location: "Consultă traseele prezentate",
+    description:
+      "În cazul în care nu dorești un traseu predefinit, putem discuta telefonic pentru a organiza și adapta un traseu croit pentru nevoile și dorințele tale.",
+    icon: React.createElement(FaBookReader),
+    // date: "2019",
+  },
+  {
+    title: "Pasul 2",
+    location: "Rezervă",
+    description:
+      "Contactează-ne la numărul de telefon 0744 259 256 pentru a face rezervarea. Totodată putem discuta despre numarul de persoane in barca, etc.",
+    icon: React.createElement(FaPhone),
+    // date: "2019 - 2021",
+  },
+  {
+    title: "Pasul 3",
+    location: "Hai în Deltă!!!",
+    description:
+      "Folosește harta cu direcțiile, din partea de jos a paginii și ne vedem la debarcader, pe ponton pentru a pleca în excursie în Deltă.",
+    icon: React.createElement(FaCar),
+    // date: "2021 - present",
+  },
+] as const;
 
-  export const itinerariesData = [
-    {
-      title: "Tulcea - Mila 23",
-      description:
-        "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-      route: "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-        tags: ["Pret: 149 lei/pers", "Durata: 4-5 ore"],
-      imageUrl: corpcommentImg,
-    },
-    {
-      title: "Excursie Colonia de pasari",
-      description:
-        "Vom porni din Tulcea – Canal 36 – Canal Trofilca – Canal Sireasa – Lac Cotete – Lac Carasul – Lac Purcelu – Canal Sireasa de Nord si dupa ce am parcurs tot traseul de vom intoarce catre Tulcea",
-        route: "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-        tags: ["Pret: 149 lei/pers", "Durata: 4-5 ore"],
-      imageUrl: rmtdevImg,
-    },
-    {
-      title: "Excursie în Delta Dunării cu durata de 2–3 ore (Lacul cu Cotețe)",
-      description:
-        "Excursia cea mai solicitată de persoanele pasionate de observarea păsărilor, oferindu-ți șansa de a realiza fotografii și filmări unor specii diverse de păsări în imediata lor apropiere.",
-        route: "Tulcea – Canal 36 – Canal Sontea Veche – Lac Mesteru – Lac Nebunu – Zona Cot Candura – Lac Baclanesti – Lac Furtuna – Canal Vacaru – ",
-        tags: ["Pret: 149 lei/pers", "Durata: 4-5 ore"],
-      imageUrl: wordanalyticsImg,
-    },
-  ] as const;
+export const itinerariesData = [
+  {
+    title: "Excursie în Deltă I - Lacuri",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina – Lac Uzlina – Lac Doru Leapca – Lac Isăcel – Lac Isac – Retur -> Debarcader Murighiol.`,
+    route: "",
+    tags: ["Preț: 80 lei/pers", "Durată: ~2 ore"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "Excursie în Deltă II - Lacuri",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina – Lac Uzlina – Lac Doru Leapca – Lac Isăcel – Canal Isac 1 – Canal Litcov - Lac Potcoava - Lac Gorgova - Canal Filat - Retur pe Dunărea Veche -> Debarcader Murighiol.`,
+    route: "",
+    tags: ["Preț: 120 lei/pers", "Durată: ~3 ore"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Excursie la Sfântul Gheorghe I",
+    description: `TRASEU: Debarcader Murighiol -> întreaga deplasare se face pe Dunăre - Retur pe Dunărea -> Debarcader Murighiol.`,
+    route:
+      "La Sfântul Gheorghe se poate face popas, cu plajă la Marea Neagră, deasemenea se pot servi preparate tradiționale gătite de localnici. Prețul acestora este separat de excursie.",
+    tags: ["Preț: 120 lei/pers", "Durată: ~ o zi întreagă"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Excursie la Sfântul Gheorghe II",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina - Lac Uzlina - Lac Isac - Canal Litcov - Canal Caraorman - Lac Puiu - Canal Mocansca - Sf. Gheorghe - Retur pe Dunărea -> Debarcader Murighiol.`,
+    route:
+      "Aceleași opțiuni de popas și servire preparate tradiționale ca în -> Excursie la Sfântul Gheorghe I.",
+    tags: ["Preț: 150 lei/pers", "Durată: ~ o zi întreagă"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Excursie în Pădurea Caraorman",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina - Lac Uzlina - Lac Isac - Canal Litcov - Canal Caraorman - Sat Caraorman - Retur -> Debarcader Murighiol.`,
+    route:
+      "Se poate vizita Pădurea Caraorman cu mașini de teren ( safari ), deasemenea se pot servi preparate tradiționale gătite de localnici. Prețul acestora este separat de excursie.",
+    tags: ["Preț: 100 lei/pers", "Durată: ~5 ore"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Excursie la Sulina",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina - Lac Uzlina - Lac Isac - Canal Litcov - Canal Caraorman - Canal Sulina - Oraș Sulina - Retur -> Debarcader Murighiol.`,
+    route:
+      "La Sulina se poate face popas pe plaja de la Marea Neagră, deasemenea se pot servi preparate tradiționale în restaurantele din oraș. Prețul acestora este separat de excursie.",
+    tags: ["Preț: 150 lei/pers", "Durată: ~ o zi întreagă"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Excursie în Pădurea Letea",
+    description: `TRASEU: Debarcader Murighiol -> Sat Uzlina - Lac Uzlina - Lac Isac - Canal Litcov - Sat Crișan - Dunărea Veche - Canal Magioru - Pădurea Letea - Retur -> Debarcader Murighiol.`,
+    route:
+      "Se poate vizita Pădurea Letea cu mașini de teren ( safari ), deasemenea se pot servi preparate tradiționale gătite de localnici. Prețul acestora este separat de excursie.",
+    tags: ["Preț: 150 lei/pers", "Durată: ~ o zi întreagă"],
+    imageUrl: wordanalyticsImg,
+  },
+] as const;

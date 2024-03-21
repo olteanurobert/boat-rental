@@ -14,10 +14,10 @@ import { useSectionInView } from "@/app/libr/hooks";
 import Itinerary from "./itinerary";
 
 export default function Itineraries() {
-  const { ref } = useSectionInView("Trasee", 0.5);
+  const { ref } = useSectionInView("Trasee");
 
   return (
-    <section ref={ref} id="itinerary" className="scroll-mt-28 mb-28">
+    <section id="itinerary" ref={ref} className="scroll-mt-28 mb-28">
       <SectionHeading>Trasee</SectionHeading>
 
       <div>

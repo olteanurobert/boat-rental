@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/libr/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("Despre noi");
+  const { ref } = useSectionInView("Despre mine");
 
   return (
     <motion.section
@@ -22,7 +22,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>Despre noi</SectionHeading>
+      <SectionHeading>Despre mine</SectionHeading>
 
       <p className="mb-3">
         Bine ai venit în minunata Delta Dunării! <br /> Dacă ești dedicat
@@ -33,11 +33,11 @@ export default function About() {
         împărtășită cu cât mai mulți entuziaști ai naturii, îmi doresc ca
         fiecare vizitator să aibă ocazia de a descoperi farmecul ei prin
         excursiile pe traseele variate. <br /> Sunt încântat să ofer excursii pe
-        mai multe trasee cu barca cu motor, asigurând protecție împotriva ploii
-        și vântului. Astfel, te vei putea bucura de priveliști de neuitat, fără
-        grija vremii. Pentru mine, bucuria ta în mijlocul naturii este cea mai
-        mare recompensă. Așadar, te invit să mă însoțești și să te bucuri de
-        frumusețile Deltei Dunării.
+        mai multe trasee cu barca cu motor, asigurând protecție împotriva
+        soarelui. Astfel, te vei putea bucura de priveliști de neuitat. Pentru
+        mine, bucuria ta, în mijlocul naturii, este cea mai mare recompensă.
+        Așadar, te invit să mă însoțești și să te bucuri de frumusețile Deltei
+        Dunării.
       </p>
     </motion.section>
   );

@@ -12,7 +12,7 @@ import { useSectionInView } from "@/app/libr/hooks";
 import { useTheme } from "@/app/context/theme-context";
 
 export default function Steps() {
-  const { ref } = useSectionInView("Pași");
+  const { ref } = useSectionInView("Pași de urmat");
   const { theme } = useTheme();
 
   return (
