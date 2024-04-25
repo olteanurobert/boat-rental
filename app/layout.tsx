@@ -10,6 +10,7 @@ import "./globals.css";
 // Components
 import Footer from "./components/serverComponents/footer";
 import ThemeSwitch from "@/app/components/clientComponents/theme-switch";
+import MobileCta from "@/app/components/clientComponents/mobileCta";
 
 // Context
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
@@ -45,6 +46,8 @@ export default function RootLayout({
             <Footer />
 
             <ThemeSwitch />
+
+            <MobileCta />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

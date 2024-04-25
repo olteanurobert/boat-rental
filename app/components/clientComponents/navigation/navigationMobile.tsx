@@ -8,6 +8,11 @@ import { Squash as Hamburger } from "hamburger-react";
 // Local Data
 import { links } from "@/app/libr/data";
 
+// Assets
+import { BsFacebook } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+
 const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -42,6 +47,29 @@ const NavMobile = () => {
             transition={{ duration: 0.2 }}
             className="fixed z-10 left-0 shadow-4xl right-0 top-[96px] px-5 pb-5 dark:bg-gray-950 dark:bg-opacity-75 bg-gray-300 bg-opacity-80 shadow-lg shadow-black/[0.03] border-b border-b-white/20"
           >
+            <div className="flex justify-end mb-6 gap-6">
+              <a
+                className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+                href="https://www.google.com/"
+                target="_blank"
+              >
+                <BsFacebook className="h-8 w-8 cursor-pointer" />
+              </a>
+              <a
+                className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+                href="https://wa.me/40744259256"
+              >
+                <BsWhatsapp className="h-8 w-8 cursor-pointer" />
+              </a>
+
+              <a
+                className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+                href={`tel:${"0740912267"}`}
+              >
+                <BsTelephone className="h-9 w-9" />
+              </a>
+            </div>
+
             <ul className="grid gap-2">
               {links.map((link, idx) => {
                 // const { Icon } = link;

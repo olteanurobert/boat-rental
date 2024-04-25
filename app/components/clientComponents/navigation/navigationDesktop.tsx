@@ -81,18 +81,28 @@ const NavDesktop = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <div className="flex items-center gap-2  cursor-pointer">
-          <BsTelephone className="h-7 w-7" />
-          <div className="flex flex-col items-center">
-            <p className="font-semibold dark:text-gray-400 dark:hover:text-gray-300">
-              +40 744 259 256
-            </p>
-          </div>
-        </div>
+        <div className="flex justify-evenly gap-6">
+          <a
+            className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+            href={`tel:${"0740912267"}`}
+          >
+            <BsTelephone className="h-9 w-9" />
+          </a>
 
-        <div className="flex justify-evenly gap-2">
-          <BsFacebook className="h-6 w-6 cursor-pointer" />
-          <BsWhatsapp className="h-6 w-6 cursor-pointer" />
+          <a
+            className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+            href="https://wa.me/40744259256"
+          >
+            <BsWhatsapp className="h-8 w-8 cursor-pointer" />
+          </a>
+
+          <a
+            className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
+            href="https://www.google.com/"
+            target="_blank"
+          >
+            <BsFacebook className="h-8 w-8 cursor-pointer" />
+          </a>
         </div>
       </motion.div>
     </header>
