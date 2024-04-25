@@ -17,14 +17,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 // Assets
-import a from "../../../public/carousel/cj-botha-T5Q6ChvfYEI-unsplash.jpg";
-import b from "../../../public/carousel/claudio-schwarz-G_ZiOoBRu3s-unsplash.jpg";
-import c from "../../../public/carousel/claudio-schwarz-i3d9vUMI0HA-unsplash.jpg";
-import d from "../../../public/carousel/neom-D1jr0Mevs-c-unsplash.jpg";
-import e from "../../../public/carousel/oscar-gutierrez-njlxwIKEMeE-unsplash.jpg";
+import a from "../../../public/carousel/1.jpg";
+import b from "../../../public/carousel/2.jpg";
+// import c from "../../../public/carousel/3.jpg";
+import d from "../../../public/carousel/4.jpg";
+import e from "../../../public/carousel/5.jpg";
+import f from "../../../public/carousel/6.jpg";
+import g from "../../../public/carousel/7.jpg";
+import h from "../../../public/carousel/8.jpg";
 
 const HeroSection = () => {
-  const images = [a, b, c, d, e];
+  const images = [a, b, d, e, f, g, h];
 
   return (
     <div className="w-full max-w-[1500px]">
