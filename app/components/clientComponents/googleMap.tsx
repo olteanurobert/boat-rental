@@ -5,7 +5,7 @@ const GoogleMap = () => {
   return (
     <div className="w-full max-w-screen-lg h-96 mb-28">
       <GoogleMapsEmbed
-        apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
+        apiKey={process.env.GOOGLE_MAPS_API_KEY!}
         height="384"
         width="100%"
         mode="place"
