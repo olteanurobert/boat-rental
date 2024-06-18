@@ -27,10 +27,10 @@ export const links = [
     name: "Pași de urmat",
     hash: "#steps",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  // {
+  //   name: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 export const stepsData = [

@@ -51,8 +51,8 @@ export default function Itinerary({
           </p>
 
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            INFO:
-            <br />
+            {/* INFO: */}
+            {/* <br /> */}
             {route}
           </p>
 
