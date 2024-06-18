@@ -13,7 +13,7 @@ const MobileCta = () => {
       </a> */}
       <a
         className="font-semibold dark:text-gray-400 dark:hover:text-gray-300"
-        href={`tel:${"0740912267"}`}
+        href={`tel:${"0744259256"}`}
       >
         <BsTelephone className="h-5 w-5" />
       </a>
