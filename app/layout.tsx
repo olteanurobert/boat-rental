@@ -31,6 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <meta
+        name="google-site-verification"
+        content="8kpAeQ52ShZO6GoIvEcVB3yewJuMznjIGjnM8tNnAA8"
+      />
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
