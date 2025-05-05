@@ -8,15 +8,13 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { stepsData } from "@/app/libr/data";
-import { useSectionInView } from "@/app/libr/hooks";
 import { useTheme } from "@/app/context/theme-context";
 
 export default function Steps() {
-  const { ref } = useSectionInView("Pași de urmat");
   const { theme } = useTheme();
 
   return (
-    <section id="steps" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="steps" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Pași de urmat</SectionHeading>
       <VerticalTimeline lineColor="">
         {stepsData.map((item, index) => {

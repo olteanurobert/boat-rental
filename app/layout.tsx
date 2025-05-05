@@ -13,15 +13,16 @@ import ThemeSwitch from "@/app/components/clientComponents/theme-switch";
 import MobileCta from "@/app/components/clientComponents/mobileCta";
 
 // Context
-import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
 import Navigation from "./components/clientComponents/navigation/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Boat Rental",
-  description: "You can rent a boat to explore the beautiful Danube Delta",
+  title: "Plimbari cu barca in Delta Dunarii",
+  description: "Poti inchirira barca pentru a explora Delta Dunarii",
+  generator: "plimbare, barca, delta, dunarii, delta, inchiriere",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -42,17 +43,15 @@ export default function RootLayout({
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
 
         <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Navigation />
+          <Navigation />
 
-            {children}
+          {children}
 
-            <Footer />
+          <Footer />
 
-            <ThemeSwitch />
+          <ThemeSwitch />
 
-            <MobileCta />
-          </ActiveSectionContextProvider>
+          <MobileCta />
         </ThemeContextProvider>
       </body>
     </html>

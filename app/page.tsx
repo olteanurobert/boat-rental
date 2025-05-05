@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Components
 import HeroSection from "./components/clientComponents/heroSection";
-import About from "./components/clientComponents/about";
+import About from "./components/serverComponents/about";
 import Itineraries from "./components/clientComponents/itineraries";
 import GoogleMap from "./components/clientComponents/googleMap";
 import Steps from "./components/clientComponents/steps";

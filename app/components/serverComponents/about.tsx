@@ -1,25 +1,11 @@
-"use client";
-
 import React from "react";
 
-import SectionHeading from "../serverComponents/section-heading";
-
-// Framer motion
-import { motion } from "framer-motion";
-
-// Helpers
-import { useSectionInView } from "@/app/libr/hooks";
+import SectionHeading from "./section-heading";
 
 export default function About() {
-  const { ref } = useSectionInView("Despre mine");
-
   return (
-    <motion.section
-      ref={ref}
+    <section
       className="my-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>Despre mine</SectionHeading>
@@ -39,6 +25,6 @@ export default function About() {
         Așadar, te invit să mă însoțești și să te bucuri de frumusețile Deltei
         Dunării.
       </p>
-    </motion.section>
+    </section>
   );
 }
